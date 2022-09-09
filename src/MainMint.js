@@ -1,6 +1,6 @@
 import {useState} from 'react';
 import { ethers, BigNumber } from 'ethers';
-import {Box, Button, Flex, Text, Input, Spacer} from '@chakra-ui/react';
+import {Box, Button, Flex, Text, Input} from '@chakra-ui/react';
 import Consortium from  './Consortium.json';
 
 const consortiumAddress = "0xdE52FeD41381EE994B7A34650CfbbF1179770A61";
@@ -41,19 +41,21 @@ const MainMint = ({ accounts, setAccounts}) => {
     };
 
     return (
-        <Flex justify="center" align="center" height="100vh" paddingBottom="150px">
+        <Flex justify="center" align="center" height="100vh" paddingTop="100px" paddingBottom="100px" overflow="scroll">
             <Box width="520px">
             <div>
                 <Text 
-                fontSize="48px" 
+                fontSize="78px" 
+                paddingBottom="-25px"
                 textShadow="0 5px #000000">Spoiled Shib's Consortium</Text>
+            
                 <Text 
-                fontSize="30px"
+                fontSize="45px"
                 letterSpacing="-5.5%"
                 fontFamily="VT323"
                 textShadow="0px 5px 5px #000000">Building the future of Voluntary Government and Logistics</Text>
-
-            <p>Sustaining Economic Resources From A Store front Located In The Shiba Inu Metaverse</p>
+                <Text
+                fontSize="30px">Sustaining Economic Resources For Shib's Everywhere <br></br>-<br></br> Store Front Located In The Shiba Inu Metaverse</Text>
             </div>
             {isConnected ? (
                 <div>
@@ -101,7 +103,8 @@ const MainMint = ({ accounts, setAccounts}) => {
                 </div>
             ) : ( 
                 <p>You Must Be Connected To Recieve A Shiby</p>
-        )} 
+                )} 
+                <footer margin="15px">=P</footer>
             </Box>
                 </Flex>
     )

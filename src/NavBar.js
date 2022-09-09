@@ -1,5 +1,5 @@
 import React from "react";
-import {Box, Button, Flex, Image, Link, Spacer} from '@chakra-ui/react';
+import {Box, Button, Flex} from '@chakra-ui/react';
 //import social media icons from socialassets folder
 //import social media icons from socialassets folder
 //import social media icons from socialassets folder
@@ -20,10 +20,10 @@ const NavBar = ({ accounts, setAccounts}) => {
       
             <Flex justify="space-between" align="center" padding="30px" >
                 {/* left side social icons */}
-                <Flex justify="space-around" width="40%" padding= "0 75px">
+                <Flex justify="space-around" width="40%" padding= "0 50px">
                     <Box margin="0 15px">Telegram</Box>
-                    <Box margin="0 15px">Telegram</Box>
-                    <Box margin="0 15px">Telegram</Box>
+                    <Box margin="0 15px">Twitter</Box>
+                    <Box margin="0 15px">Discord</Box>
                 </Flex>
 
          
@@ -31,13 +31,11 @@ const NavBar = ({ accounts, setAccounts}) => {
 
     {/* right side social icons */}
             <Flex justify="space-around" align-items="justify-right" padding="30px" >
-                <Box margin="0 40px">About</Box>
-                <Box margin="0 40px">Mint</Box>
             </Flex>
 
             {/* Connect */}
             {isConnected ? (
-            <Box margin="0 15px">isConnected</Box>
+            <Box margin="0 15px" color="lightgreen">isConnected</Box>
             ) : (
                 <Button
                  backgroundColor="#D6517D"

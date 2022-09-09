@@ -26,6 +26,10 @@ body{
 }
 
 .moving_background {
+  background-image: url("C:\Users\hus5_0tlr\Desktop\finalform2\spoiledshibs\public\00005 (1).png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
   z-index: -1;
   position: absolute;
   top: 0;
